@@ -8,5 +8,6 @@ import { Component } from '@angular/core';
   styleUrl: './contact.component.scss'
 })
 export class ContactComponent {
-
+  nombre: string = "HOLA";
+  numero: number = 10;
 }
