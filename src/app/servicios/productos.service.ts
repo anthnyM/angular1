@@ -8,7 +8,7 @@ export class ProductosService {
 
   constructor(private http: HttpClient) { }
 
-  obtenerProductos() {
+  obtenerProductos(){
     return this.http.get("https://fakestoreapi.com/products")
   }
 }

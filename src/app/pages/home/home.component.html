@@ -1,8 +1,13 @@
 <main>
     <h1>HOME</h1>
-    @for (producto of productos; track producto.nombre) {
-        <div>{{producto.title}}</div>
-        <div>Bs. {{producto.price}}</div>
-    }
+    <div class="productos">
+            @for (producto of productos; track producto.nombre) {
+                <div class="producto">
+                    <div>{{producto.title}}</div>
+                    <div>Bs. {{producto.price}}</div>
+                    <img src="{{producto.image}}" alt="" height="300px" width="300px">
+                </div>
+            }
+    </div>
 </main>
 
