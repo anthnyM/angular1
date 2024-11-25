@@ -1,1 +1,6 @@
 <p>articulos works!</p>
+<p>
+    @for(articulo of articulos; track articulo.id){
+        <app-articulo [articulo]="articulo"></app-articulo>
+    }
+</p>
